@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#slider, .wrap, .slide-content {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("./img/stocks-mobile-bg.jpg");
+}
+
+.slide2 {
+    background-image: url("./img/top-10.jpg");
+}
+
+.slide3 {
+    background-image: url("./img/social.jpeg");
+}
+
+.slide4 {
+    background-image: url("./img/Fresh_Stock_Content.jpg");
+}
+
+.slide5 {
+    background-image: url("./img/sub-buzz-5511-1501688542-1.jpg");
+}
+
+.slide6 {
+    background-image: url("./img/gratisography-top-hat-dude-free-stock-photo-800x525.jpg");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+}
+
+ /* Next & previous buttons */
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+ }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+   }
+
+.prev:hover, .next:hover {
+       background-color: rgba(0, 0, 0, 0.8);
+   }
