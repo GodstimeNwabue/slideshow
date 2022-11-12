@@ -65,7 +65,9 @@
      margin-top: -22px;
      padding: 16px;
      color: white;
-     transition: 0.6s ease;
+     /* transition: 0.6s ease; */
+     opacity: 0;
+     transition: opacity 800ms;
      border-radius: 0 3px 3px 0;
      user-select: none;
  }
@@ -75,6 +77,11 @@
     border-radius: 3px 0 0 3px;
    }
 
-.prev:hover, .next:hover {
+.wrap:hover .prev, .wrap:hover .next {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .prev:hover, .next:hover {
        background-color: rgba(0, 0, 0, 0.8);
-   }
+   } */
